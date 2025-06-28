@@ -38,11 +38,11 @@ export default function HomePage() {
 
         <div className="space-y-4">
           <Button asChild className="w-full">
-            <Link href="/register">Đăng ký ngay</Link>
+            <Link href="/dang-ky">Đăng ký ngay</Link>
           </Button>
 
           <Button asChild variant="outline" className="w-full">
-            <Link href="/login">Đăng nhập</Link>
+            <Link href="/dang-nhap">Đăng nhập</Link>
           </Button>
         </div>
 
