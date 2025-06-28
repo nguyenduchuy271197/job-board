@@ -861,3 +861,296 @@ insert into public.jobs (id, title, slug, description, requirements, salary_min,
     11,
     now() - interval '1 day'
   );
+
+-- Insert seed data for industries table
+insert into public.industries (id, name, slug, created_at) values
+  (
+    '11111111-1111-1111-1111-111111111111'::uuid,
+    'Công nghệ thông tin',
+    'cong-nghe-thong-tin',
+    now()
+  ),
+  (
+    '22222222-2222-2222-2222-222222222222'::uuid,
+    'Tài chính - Ngân hàng',
+    'tai-chinh-ngan-hang',
+    now()
+  ),
+  (
+    '33333333-3333-3333-3333-333333333333'::uuid,
+    'Thương mại điện tử',
+    'thuong-mai-dien-tu',
+    now()
+  ),
+  (
+    '44444444-4444-4444-4444-444444444444'::uuid,
+    'Bất động sản',
+    'bat-dong-san',
+    now()
+  ),
+  (
+    '55555555-5555-5555-5555-555555555555'::uuid,
+    'Truyền thông - Media',
+    'truyen-thong-media',
+    now()
+  ),
+  (
+    '66666666-6666-6666-6666-666666666666'::uuid,
+    'Sản xuất',
+    'san-xuat',
+    now()
+  ),
+  (
+    '77777777-7777-7777-7777-777777777777'::uuid,
+    'Y tế - Dược phẩm',
+    'y-te-duoc-pham',
+    now()
+  ),
+  (
+    '88888888-8888-8888-8888-888888888888'::uuid,
+    'Giáo dục - Đào tạo',
+    'giao-duc-dao-tao',
+    now()
+  ),
+  (
+    '99999999-9999-9999-9999-999999999999'::uuid,
+    'Du lịch - Khách sạn',
+    'du-lich-khach-san',
+    now()
+  ),
+  (
+    'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa'::uuid,
+    'Bán lẻ',
+    'ban-le',
+    now()
+  ),
+  (
+    'bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb'::uuid,
+    'Logistics - Vận tải',
+    'logistics-van-tai',
+    now()
+  ),
+  (
+    'cccccccc-cccc-cccc-cccc-cccccccccccc'::uuid,
+    'Năng lượng',
+    'nang-luong',
+    now()
+  ),
+  (
+    'dddddddd-dddd-dddd-dddd-dddddddddddd'::uuid,
+    'Nông nghiệp',
+    'nong-nghiep',
+    now()
+  ),
+  (
+    'eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee'::uuid,
+    'Tư vấn',
+    'tu-van',
+    now()
+  ),
+  (
+    'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,
+    'Marketing - Quảng cáo',
+    'marketing-quang-cao',
+    now()
+  );
+
+-- Insert seed data for locations table
+insert into public.locations (id, name, slug, country, province, created_at) values
+  -- Major cities
+  (
+    'a1111111-1111-1111-1111-111111111111'::uuid,
+    'Hà Nội',
+    'ha-noi',
+    'Vietnam',
+    null,
+    now()
+  ),
+  (
+    'a2222222-2222-2222-2222-222222222222'::uuid,
+    'Hồ Chí Minh',
+    'ho-chi-minh',
+    'Vietnam',
+    null,
+    now()
+  ),
+  (
+    'a3333333-3333-3333-3333-333333333333'::uuid,
+    'Đà Nẵng',
+    'da-nang',
+    'Vietnam',
+    null,
+    now()
+  ),
+  -- Northern provinces
+  (
+    'a4444444-4444-4444-4444-444444444444'::uuid,
+    'Hải Phòng',
+    'hai-phong',
+    'Vietnam',
+    'Hải Phòng',
+    now()
+  ),
+  (
+    'a5555555-5555-5555-5555-555555555555'::uuid,
+    'Quảng Ninh',
+    'quang-ninh',
+    'Vietnam',
+    'Quảng Ninh',
+    now()
+  ),
+  (
+    'a6666666-6666-6666-6666-666666666666'::uuid,
+    'Thái Nguyên',
+    'thai-nguyen',
+    'Vietnam',
+    'Thái Nguyên',
+    now()
+  ),
+  (
+    'a7777777-7777-7777-7777-777777777777'::uuid,
+    'Vĩnh Phúc',
+    'vinh-phuc',
+    'Vietnam',
+    'Vĩnh Phúc',
+    now()
+  ),
+  (
+    'a8888888-8888-8888-8888-888888888888'::uuid,
+    'Bắc Ninh',
+    'bac-ninh',
+    'Vietnam',
+    'Bắc Ninh',
+    now()
+  ),
+  (
+    'a9999999-9999-9999-9999-999999999999'::uuid,
+    'Hưng Yên',
+    'hung-yen',
+    'Vietnam',
+    'Hưng Yên',
+    now()
+  ),
+  -- Central provinces
+  (
+    'aaaaaaaa-aaaa-aaaa-aaaa-111111111111'::uuid,
+    'Huế',
+    'hue',
+    'Vietnam',
+    'Thừa Thiên Huế',
+    now()
+  ),
+  (
+    'bbbbbbbb-bbbb-bbbb-bbbb-222222222222'::uuid,
+    'Hội An',
+    'hoi-an',
+    'Vietnam',
+    'Quảng Nam',
+    now()
+  ),
+  (
+    'cccccccc-cccc-cccc-cccc-333333333333'::uuid,
+    'Quy Nhon',
+    'quy-nhon',
+    'Vietnam',
+    'Bình Định',
+    now()
+  ),
+  (
+    'dddddddd-dddd-dddd-dddd-444444444444'::uuid,
+    'Nha Trang',
+    'nha-trang',
+    'Vietnam',
+    'Khánh Hòa',
+    now()
+  ),
+  (
+    'eeeeeeee-eeee-eeee-eeee-555555555555'::uuid,
+    'Đà Lạt',
+    'da-lat',
+    'Vietnam',
+    'Lâm Đồng',
+    now()
+  ),
+  -- Southern provinces
+  (
+    'ffffffff-ffff-ffff-ffff-666666666666'::uuid,
+    'Vũng Tàu',
+    'vung-tau',
+    'Vietnam',
+    'Bà Rịa - Vũng Tàu',
+    now()
+  ),
+  (
+    'aaaabbbb-cccc-dddd-eeee-777777777777'::uuid,
+    'Cần Thơ',
+    'can-tho',
+    'Vietnam',
+    'Cần Thơ',
+    now()
+  ),
+  (
+    'bbbbcccc-dddd-eeee-ffff-888888888888'::uuid,
+    'An Giang',
+    'an-giang',
+    'Vietnam',
+    'An Giang',
+    now()
+  ),
+  (
+    'ccccdddd-eeee-ffff-aaaa-999999999999'::uuid,
+    'Bình Dương',
+    'binh-duong',
+    'Vietnam',
+    'Bình Dương',
+    now()
+  ),
+  (
+    'ddddeeee-ffff-aaaa-bbbb-aaaaaaaaaaaa'::uuid,
+    'Đồng Nai',
+    'dong-nai',
+    'Vietnam',
+    'Đồng Nai',
+    now()
+  ),
+  (
+    'eeeeffff-aaaa-bbbb-cccc-bbbbbbbbbbbb'::uuid,
+    'Tây Ninh',
+    'tay-ninh',
+    'Vietnam',
+    'Tây Ninh',
+    now()
+  ),
+  (
+    'ffffaaaa-bbbb-cccc-dddd-cccccccccccc'::uuid,
+    'Long An',
+    'long-an',
+    'Vietnam',
+    'Long An',
+    now()
+  ),
+  (
+    'aaaabbbb-cccc-dddd-eeee-dddddddddddd'::uuid,
+    'Tiền Giang',
+    'tien-giang',
+    'Vietnam',
+    'Tiền Giang',
+    now()
+  ),
+  -- Remote/Online options
+  (
+    'bbbbcccc-dddd-eeee-ffff-eeeeeeeeeeee'::uuid,
+    'Làm việc từ xa',
+    'lam-viec-tu-xa',
+    'Vietnam',
+    null,
+    now()
+  ),
+  (
+    'ccccdddd-eeee-ffff-aaaa-ffffffffffff'::uuid,
+    'Toàn quốc',
+    'toan-quoc',
+    'Vietnam',
+    null,
+    now()
+  );
